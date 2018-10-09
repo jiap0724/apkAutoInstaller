@@ -5,12 +5,12 @@
       <![CDATA[共验证渠道包个数为：3个]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="127210" started-at="2018-10-09T04:02:57Z" finished-at="2018-10-09T04:05:04Z">
+  <suite name="Suite" duration-ms="132008" started-at="2018-10-09T06:02:09Z" finished-at="2018-10-09T06:04:22Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="127210" started-at="2018-10-09T04:02:57Z" finished-at="2018-10-09T04:05:04Z">
+    <test name="Test" duration-ms="132008" started-at="2018-10-09T06:02:09Z" finished-at="2018-10-09T06:04:22Z">
       <class name="AndroidInstaller.dongman.apkInstallTest">
-        <test-method status="PASS" signature="androidApkCheck()[pri:0, instance:AndroidInstaller.dongman.apkInstallTest@679b62af]" name="androidApkCheck" duration-ms="127026" started-at="2018-10-09T12:02:57Z" finished-at="2018-10-09T12:05:04Z">
+        <test-method status="PASS" signature="androidApkCheck()[pri:0, instance:AndroidInstaller.dongman.apkInstallTest@679b62af]" name="androidApkCheck" duration-ms="131824" started-at="2018-10-09T14:02:10Z" finished-at="2018-10-09T14:04:21Z">
           <reporter-output>
             <line>
               <![CDATA[共验证渠道包个数为：3个]]>
