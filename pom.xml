@@ -253,4 +253,22 @@
 	</plugin> -->
       </plugins>
   </build>
+  <!--allure的report插件，生成html报告,配置case以及bug地址-->
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <artifactId>allure-maven-plugin</artifactId>
+                <!-- <configuration>
+                    @Issue以及@TestCaseId中的链接配置，%s为id占位符
+                    <properties>
+                        <allure.issues.tracker.pattern>http://122.225.68.74:8082/browse/%s</allure.issues.tracker.pattern>
+                        <allure.tests.management.pattern>http://122.225.68.74:8082/browse/%s</allure.tests.management.pattern>
+                    </properties>
+                </configuration> -->
+            </plugin>
+        </plugins>
+    </reporting>
+
 </project>
