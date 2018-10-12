@@ -92,8 +92,8 @@ public class apkInstallTest {
 				capabilities.setCapability("deviceName", "emulator-5554");// 模拟器
 
 				// 设置Android系统的版本号
-				// capabilities.setCapability("platformVersion", "9");
-				capabilities.setCapability("platformVersion", "8.0.0");
+				capabilities.setCapability("platformVersion", "9");
+				// capabilities.setCapability("platformVersion", "8.0.0");
 				// 设置apk文件的路径
 				capabilities.setCapability("app", apk.getAbsolutePath());
 
