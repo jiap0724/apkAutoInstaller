@@ -13,8 +13,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.qameta.allure.Description;
-import io.qameta.allure.Step;
+import io.qameta.allure.Feature;
 
 public class apkInstallTest {
 	private AndroidDriver<WebElement> driver;
@@ -63,9 +62,13 @@ public class apkInstallTest {
 		System.out.println("app已经卸载了");
 	}
 
-	@Description("渠道包测试报告 共验证渠道包个数为：")
-	@Step("安装卸载以及第三方登录")
+	
+	test2 t = new test2();
+	int a = t.apklist();
 
+	// @Description("渠道包测试报告")
+	@Feature("渠道包测试")
+	// @Title()
 	@Test
 	public void androidApkCheck() throws Exception {
 
@@ -129,5 +132,7 @@ public class apkInstallTest {
 		}
 		Reporter.log("共验证渠道包个数为：" + apksnumber + "个");
 	}
+
+	
 
 }
