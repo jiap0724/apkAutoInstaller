@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Stories;
+import io.qameta.allure.Story;
 
 public class apkInstallTest {
 	private AndroidDriver<WebElement> driver;
@@ -68,7 +70,8 @@ public class apkInstallTest {
 
 	// @Description("渠道包测试报告")
 	@Feature("渠道包测试")
-	// @Title()
+	@Stories(value = { @Story(value = "第三方登录"), @Story(value = "安装卸载") })
+
 	@Test
 	public void androidApkCheck() throws Exception {
 
