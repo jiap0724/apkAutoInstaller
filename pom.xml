@@ -26,7 +26,10 @@
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <allure.version>1.5.4</allure.version>
+   <aspectj.version>1.8.10</aspectj.version>
   </properties>
+
 
   <dependencies>
   <!--添加allure的依赖包-->
