@@ -13,6 +13,8 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 
 public class apkInstallTest {
 	private AndroidDriver<WebElement> driver;
@@ -61,6 +63,9 @@ public class apkInstallTest {
 		System.out.println("app已经卸载了");
 	}
 
+	@Description("渠道包测试报告 共验证渠道包个数为：")
+	@Step("安装卸载以及第三方登录")
+
 	@Test
 	public void androidApkCheck() throws Exception {
 
@@ -87,8 +92,8 @@ public class apkInstallTest {
 				capabilities.setCapability("deviceName", "emulator-5554");// 模拟器
 
 				// 设置Android系统的版本号
-				capabilities.setCapability("platformVersion", "9");
-
+				// capabilities.setCapability("platformVersion", "9");
+				capabilities.setCapability("platformVersion", "8.0.0");
 				// 设置apk文件的路径
 				capabilities.setCapability("app", apk.getAbsolutePath());
 
