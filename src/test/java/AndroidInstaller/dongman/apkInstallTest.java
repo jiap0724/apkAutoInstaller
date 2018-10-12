@@ -65,8 +65,6 @@ public class apkInstallTest {
 	}
 
 	
-	test2 t = new test2();
-	int a = t.apklist();
 
 	// @Description("渠道包测试报告")
 	@Feature("渠道包测试")
