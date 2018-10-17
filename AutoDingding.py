@@ -1,3 +1,4 @@
+#coding=utf-8
 import requests
 import time
 import json
@@ -40,8 +41,8 @@ class Message():
     #发送报告
     def send_message_to_robot(self):
         url= DINGDING_URL
-        message='wm-api自动化执行结果:\n本次执行了{}条用例;\n成功了{}条;\n失败了{}条;\n跳过了{}条;\n查看详情请点击=> {}'.format(self.total,self.passed,self.failed,self.skipped,self.reportUrl)
-        data={"msgtype":"text","text":{"content":message,"title":"wm-api自动化结果通知"}}
+        message='android渠道包自动化验证执行结果:\n本次执行了{}条用例;\n成功了{}条;\n失败了{}条;\n跳过了{}条;\n查看详情请点击=> {}'.format(self.total,self.passed,self.failed,self.skipped,self.reportUrl)
+        data={"msgtype":"text","text":{"content":message,"title":"android渠道包自动化验证通知"}}
         try:
             resp = requests.post(url,headers=HEADERS,json=data,timeout=(3,60))
         except:
