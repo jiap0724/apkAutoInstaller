@@ -40,16 +40,17 @@ public class apkInstallTest {
 			Thread.sleep(2000);
 			shouquan.click();
 			Swipe swipe = new Swipe(driver);
-			// 向左滑动工具区4次
-			for (int i = 0; i < 4; i++) {
+			// 向左滑动工具区5次
+			for (int i = 0; i < 5; i++) {
 				swipe.swipe_Left(500);
 			}
 			Thread.sleep(2000);
-			WebElement kaiqi = (AndroidElement) driver.findElement(By.id("com.weibo.comic:id/guide_image"));
+			WebElement kaiqi = (AndroidElement) driver.findElement(By.id("com.weibo.comic:id/hk"));
 			kaiqi.click();
 
 			Thread.sleep(2000);
-			WebElement nan = (AndroidElement) driver.findElement(By.id("com.weibo.comic:id/imgBoy"));
+			//WebElement nan = (AndroidElement) driver.findElement(By.id("com.weibo.comic:id/j6"));
+			WebElement nan=(AndroidElement)driver.findElement(By.id("com.weibo.comic:id/u9"));
 			nan.click();
 
 			Thread.sleep(5000);
@@ -96,8 +97,8 @@ public class apkInstallTest {
 				capabilities.setCapability("deviceName", "emulator-5554");// 模拟器
 
 				// 设置Android系统的版本号
-				capabilities.setCapability("platformVersion", "9");
-				// capabilities.setCapability("platformVersion", "8.0.0");
+				//capabilities.setCapability("platformVersion", "9");
+				capabilities.setCapability("platformVersion", "8.0.0");
 				// 设置apk文件的路径
 				capabilities.setCapability("app", apk.getAbsolutePath());
 
